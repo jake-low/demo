@@ -1,6 +1,6 @@
-all: /output/index.html
+all: /www/index.html
 
-/output/index.html: index.md
+/www/index.html: index.md
 	markdown index.md > index.html
 	echo "<p>Last built: $(date)</p>" >> index.html
 	echo "<p>Commit hash: $(git rev-parse HEAD)</p>" >> index.html
